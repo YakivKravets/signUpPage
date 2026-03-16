@@ -1,0 +1,21 @@
+body {
+    display: flex;
+}
+
+.leftColumn img {
+    height: 100vh; 
+    display: block; 
+}
+
+.leftColumn {
+    height: 100vh; 
+}
+
+.rightColumn {
+    display: flex;
+flex-direction: column;
+}
+
+.rightColumn > * {
+    height: calc(100vh/3);
+}
