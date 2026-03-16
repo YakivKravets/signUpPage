@@ -1,5 +1,10 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .leftColumn img {
@@ -13,9 +18,37 @@ body {
 
 .rightColumn {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
 }
 
 .rightColumn > * {
     height: calc(100vh/3);
+    background-color: rgb(238, 238, 238);
+    padding-left: 6vh;
+    padding-top: 3vh;
+    
+}
+
+.rightColumnForm {
+    background-color: white;
+    
+}
+.rightColumnSubmit {
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.151);
+}
+
+a {
+    color: rgb(84, 119, 74);
+    text-decoration: none;
+}
+
+#submitButton {
+    background-color: rgb(84, 119, 74);
+    padding: 1.5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border-radius: 1vh;
+    border: none;
+    color: white;
 }
