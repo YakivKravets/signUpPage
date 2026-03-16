@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up, Odin</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="leftColumn">
@@ -12,11 +15,43 @@
     </div>
     <div class="rightColumn">
         <div>
-            <h3>This is not real form(( im just making a fake one so i`ll practice</h3>
+            <h2>This is not real form(( im just making a fake one so i`ll practice</h2>
+            <h2>but it still awesome form! </h2><div>try to login</div>
         </div>
-        <div class="rightColumnForm"></div>
+        <div class="rightColumnForm">
+            
+            <form id="signup-form" action="https://google.com" method="POST" id="main-form">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" name="pass" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="conf-pass">Confirm Password</label>
+                        <input type="password" id="conf-pass" name="conf-pass" required>
+                    </div>
+                </div>
+   
+            </form>
+        </div>
         <div class="rightColumnSubmit">
-            <button id="submitButton">Create Account</button>
+            <button id="submitButton" type="submit" form="signup-form">Create Account</button>
             <p>Already have an account? <a href="https://www.google.com">Log in!</a></p>
             
         </div>

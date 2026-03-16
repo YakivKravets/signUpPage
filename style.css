@@ -4,7 +4,36 @@
 
 body {
     display: flex;
-    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px; 
+    max-width: 600px;
+}
+
+.input-group {
+    
+    flex: 0 0 calc(50% - 20px); 
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #596D48;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .leftColumn img {
